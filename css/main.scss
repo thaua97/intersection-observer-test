@@ -1,0 +1,106 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: #212933;
+}
+
+header {
+    height: 100vh;
+    padding: 40px 90px;
+    background-color:#ffeea3;
+    background-image: url(../images/he-bg.jpg);
+    display: grid;
+    place-items: center;
+
+    h1 {
+        font-family: 'Monoton', sans-serif;
+        font-size: 6rem;
+        color: #fff;
+        animation: anime2 4s alternate;
+    }
+}
+
+section {
+    margin: 0 auto;
+    height: 100vh;
+    width: 80%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 70% auto; 
+
+    .left {
+        position: relative;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        
+        p {
+            width: 20vw;
+            margin-top: -35%;
+            right: 5%;
+            padding: 10px 15px;
+            position: absolute;
+            background: #fff;
+            border-radius: 15px;
+            color: #212933;
+            font-family: 'Poppins', sans-serif;
+            text-align: left;
+        }
+
+        .blue {
+            width: 50%;
+            opacity: 0;
+        }
+
+        .weather {
+            width: 7vw;
+            position: absolute;
+            margin-top: 25%;
+            left: 15%;
+        }
+    }
+
+    .right {
+        display: grid;
+        place-items: center;
+
+        h2 {
+            color:lightblue;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.7rem;
+        }
+
+        p {
+            line-height: 2rem;
+            color:#ffeea3;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    .anime {
+        opacity: 0;
+    }
+}
+
+@keyframes anime1 {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translateZ(-1);
+        opacity: 0;
+    } to {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
